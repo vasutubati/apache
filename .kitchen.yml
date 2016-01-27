@@ -1,0 +1,17 @@
+---
+driver:
+  name: docker
+
+provisioner:
+  name: chef_zero
+
+platforms:
+   - name: centos-7.1
+
+suites:
+  - name: default
+    run_list:
+
+      - recipe[apachenew::default]
+
+    attributes:

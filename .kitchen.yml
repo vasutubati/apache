@@ -8,7 +8,9 @@ provisioner:
 
 platforms:
    - name: centos-7.1
-
+    driver_config:
+       image: centos:7.1
+       platform: centos
 suites:
   - name: default
     run_list:
